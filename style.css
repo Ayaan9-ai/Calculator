@@ -1,0 +1,166 @@
+:root {
+    --mian-color: #005DD9;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    width: 306px;
+    padding: 20px 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black,
+    -5px -5px 10px black;
+}
+
+output {
+    border: solid 2px var(--mian-color);
+    height: 60px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.output input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 50px;
+    text-align: end;
+    padding-right: 20px;
+    color: var(--mian-color);
+}
+
+.output input::placeholder {
+    color: var(--main-color);
+}
+
+.btns {
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    gap: 10px 15px;
+}
+
+.btns button {
+    border: none;
+    outline: none;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 25px;
+    color: var(--main-color);
+    background-color: white;
+    box-shadow: 5px 5px 5px black;
+}
+
+.btns button.sp {
+    background-color: var(--mian-color);
+    color: white;
+}
+
+.btns button.equal {
+    width: 135px;
+    border-radius: 22px;
+}
+
+.appmenu {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    width: 25px;
+    gap: 5px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.icon span {
+    background-color: var(--main-color);
+    height: 5px;
+    width: 100%;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.menu {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    gap: 10px;
+    transform: scale(0);
+    transform-origin: top left;
+    transition: 0.3s;
+    box-shadow: 5px 5px 10px black;
+}
+
+.menu.open {
+    transform: scale(1);
+}
+
+.menu div {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: solid 2px #818181;
+}
+
+.menu div:nth-child(1) {
+    background-color: #005DD9;
+}
+
+.menu div:nth-child(2) {
+    background-color: #DF8F12;
+}
+
+.menu div:nth-child(3) {
+    background-color: #E23434;
+}
+
+.menu div:nth-child(4) {
+    background-color: #622AEB;
+}
+
+.menu div:nth-child(5) {
+    background-color: #FF20A1;
+}
+
+body.blue {
+    --main-color: #005DD9;
+}
+
+body.blue {
+    --main-color: #005DD9;
+}
+
+body.orange {
+    --main-color: #DF8F12;
+}
+
+body.red {
+    --mian-color: #E23434;
+}
+
+body.purple {
+    --mian-color: #622AEB;
+}
+
+body.pink {
+    --main-color: #FF20A1;
+}
